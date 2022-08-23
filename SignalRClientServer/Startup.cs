@@ -95,7 +95,7 @@ namespace SignalRClientServer
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync(generateToken("User_A"));
+                    await context.Response.WriteAsync("...Chat hub is running!");
                 });
                 endpoints.MapControllers();
                 endpoints.MapHub<ChatHub>("/chatHub");
