@@ -1,0 +1,17 @@
+﻿.User_A {
+    background: rgb(256,240,240);
+    color: rgb(256,0,0);
+}
+
+.User_B {
+    background: rgb(240,240,256);
+    color: rgb(0,0,256);
+}
+
+li {
+    padding: 8px 8px 8px 8px;
+}
+
+span {
+    color: gray;
+}
