@@ -1,3 +1,7 @@
+Prerequisites
+SignalR ver. - "@microsoft/signalr": "^6.0.8"
+.Net Core SDK ver. - 5.0
+
 How to run this web app and reproduce the issue?
 
 1. After download the code, build solution and publish to the IIS that can visible on the network.
@@ -7,10 +11,12 @@ How to run this web app and reproduce the issue?
 
 Scenario A. Messages are received correctly.
 A.1. Unplug network cable/connection from this PC/laptop for a moment (1-2 sec) and plugin back. 
-A.2. Check the numbers of sequence or the delivered messages. You can experinece that all messages were delivered in right sequence as they keept in signalr buffer while connection is lost.
+A.2. Check the numbers of sequence or the delivered messages. You can experinece that all messages were delivered in right sequence as they keept in signalr buffer while connection is lost.<br>
+See video demo https://youtu.be/UbQA3LAvQRY
 
 Scenario B. Messages are lost due to long time of reconnectiong.
 A.1. Unplug network cable/connection from this PC/laptop for a long time (15 sec or more) and plugin back. 
-A.2. You can experinece that part of sequence of messages are lost and not delivered from "user A".
+A.2. You can experinece that part of sequence of messages are lost and not delivered from "user A".<br>
+See video demo https://youtu.be/KchVsQYV3NI
 
 The task is to handle correctly "Scenario B" in order to avoid lost messages from "User A" during "User B" is reconnecting.
