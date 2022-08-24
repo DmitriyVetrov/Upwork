@@ -51,6 +51,7 @@ async function main()
     }
 
     setInterval(async function () {
+        console.log("the connection state is: ", connection.state);
         try {
             await connection.invoke("SendMessageToUser", toUser, "message N<b>" + count++ + "</b> at " + getDate());
         } catch (err) {
