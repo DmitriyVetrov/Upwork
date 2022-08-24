@@ -1,3 +1,7 @@
+Prerequisites
+SignalR ver. - "@microsoft/signalr": "^6.0.8"
+.Net Core SDK ver. - 5.0
+
 How to run this web app and reproduce the issue?
 
 1. After download the code, build solution and publish to the IIS that can visible on the network.
